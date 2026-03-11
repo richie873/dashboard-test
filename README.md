@@ -24,7 +24,7 @@ Instalasi & Menjalankan Project:
     DB_PASS=passwordkamu
     DB_NAME=nama_database
   - Jalankan backend server
-    node server.js
+    (node server.js)
     Backend akan berjalan di: `http://localhost:5000`
 3. Setup Frontend
   - Buka terminal baru:
@@ -33,7 +33,7 @@ Instalasi & Menjalankan Project:
   - Install semua dependencies
     npm install
   - Jalankan frontend development server
-    npm run dev
+    (npm run dev)
     Frontend akan berjalan di: `http://localhost:5173`
 
 Dependencies: 
