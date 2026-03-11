@@ -12,29 +12,29 @@ Fitur:
 Instalasi & Menjalankan Project: 
 1. Clone Repository
 2. Setup Backend
-  # Masuk ke folder backend
-  cd backend
-  # Install semua dependencies
-  npm install
-  # Salin file .env.example menjadi .env
-  cp .env.example .env
-  Buka file `.env` dan sesuaikan dengan konfigurasi database:
-  DB_HOST=localhost
-  DB_USER=root
-  DB_PASS=passwordkamu
-  DB_NAME=nama_database
-  # Jalankan backend server
-  node server.js
-  Backend akan berjalan di: `http://localhost:5000`
+  - Masuk ke folder backend
+  - cd backend
+  - Install semua dependencies
+    npm install
+  - Salin file .env.example menjadi .env
+  - cp .env.example .env
+  - Buka file `.env` dan sesuaikan dengan konfigurasi database:
+    DB_HOST=localhost
+    DB_USER=root
+    DB_PASS=passwordkamu
+    DB_NAME=nama_database
+  - Jalankan backend server
+    node server.js
+    Backend akan berjalan di: `http://localhost:5000`
 3. Setup Frontend
-  Buka terminal baru:
-  # Masuk ke folder frontend
-  cd frontend
-  # Install semua dependencies
-  npm install
-  # Jalankan frontend development server
-  npm run dev
-  Frontend akan berjalan di: `http://localhost:5173`
+  - Buka terminal baru:
+  - Masuk ke folder frontend
+  - cd frontend
+  - Install semua dependencies
+    npm install
+  - Jalankan frontend development server
+    npm run dev
+    Frontend akan berjalan di: `http://localhost:5173`
 
 Dependencies: 
 - Backend
