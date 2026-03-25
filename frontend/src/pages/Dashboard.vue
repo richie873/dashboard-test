@@ -2,6 +2,7 @@
 // Import komponen tabel dan chart yang akan ditampilkan
 import ComplianceTable from "../components/ComplianceTable.vue"
 import ComplianceChart from "../components/ComplianceChart.vue"
+import ProductsTable from "../components/ProductsTable.vue"
 // Import fungsi Vue yang dibutuhkan
 import { ref, onMounted } from "vue"
 import { api } from "../services/api"
@@ -127,12 +128,14 @@ onMounted(() => {
 
     </div>
 
-    <!-- CHART -->
+    <!-- CHART Compliance -->
     <ComplianceChart :chartData="chartData" />
 
-    <!-- TABLE -->
+    <!-- TABLE Compliance-->
     <ComplianceTable :tableData="tableData" :tableAreas="tableAreas" />
 
+    <!-- TABLE Products -->
+    <ProductsTable :tableData="tableData" :tableAreas="tableAreas" />
   </div>
 
 </template>

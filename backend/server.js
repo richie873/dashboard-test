@@ -7,6 +7,7 @@ const cors = require("cors")
 
 // Import router compliance yang berisi semua endpoint /areas dan /compliance
 const complianceRoutes = require('./routes/complianceRoutes')
+const productRoutes = require('./routes/productRoutes')
 
 // Buat instance aplikasi Express
 const app = express()
@@ -21,8 +22,9 @@ app.use(express.json())
 // Sehingga endpoint menjadi:
 // → GET http://localhost:5000/api/areas
 // → GET http://localhost:5000/api/compliance
+// → GET http://localhost:5000/api/products
 app.use('/api', complianceRoutes)
-
+app.use('/api', productRoutes)
 // =====================
 // START SERVER
 // =====================

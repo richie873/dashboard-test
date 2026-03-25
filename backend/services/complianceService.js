@@ -65,7 +65,6 @@ async function getComplianceData(area_id, date_from, date_to) {
    pb.brand_name,
    sa.area_id,
    sa.area_name,
-   -- Hitung rata-rata compliance dalam persen, dibulatkan 1 desimal
    ROUND(SUM(rp.compliance) / COUNT(rp.report_id) * 100) AS nilai
   FROM report_product rp
   JOIN product p       ON rp.product_id = p.product_id 
